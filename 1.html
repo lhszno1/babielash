@@ -4,35 +4,64 @@
   <title>BABIE LASH</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin:0px;
+  }
   a {
-    color:green;
+    color:black;
     text-decoration: none;
   }
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  #grid ol{
+    border-right: 1px solid gray;
+    width:100px;
+    margin:0;
+    padding-left:33px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left: 25px;
+  }
+  @media(max-width:800px){
+    display:block{
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html">바비눈썹</a></h1>
-  <ol>
-    <li><a href="1.html">눈썹종류</a></li>
-    <li><a href="2.html" style="color:blue;text-decoration:underline">위치</a></li>
-    <li><a href="3.html">가격</a></li>
-  </ol>
-<!--
-  <h1><a href="index.html"><font color="red">바비눈썹</font></a></h1>
-  <ol>
-    <li><a href="1.html"><font color="red">눈썹종류</font></a></li>
-    <li><a href="2.html"><font color="red">위치</font></a></li>
-    <li><a href="3.html"><font color="red">가격</font></a></li>
-  </ol>
--->
-  <h2>눈썹종류</h2>
-  인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
-   바비눈썹
-   <a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
-     blank title=눈썹종류><img src="face1.png" width="70%"></a>
-  <p style="margin-top:40px;">
-  <p>속눈썹연장 종류 10가지</p>
-  <p>속눈썹파마 종류 5가지</p>
-  <p>반영구문신 종류 2가지</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">눈썹종류</a></li>
+      <li><a href="2.html">위치</a></li>
+      <li><a href="3.html">가격</a></li>
+    </ol>
+    <div id="article">
+      <h2>눈썹종류</h2>
+      인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
+       바비눈썹
+       <a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
+         blank title=눈썹종류><img src="face1.png" width="70%"></a>
+      <p style="margin-top:40px;">
+      <p>속눈썹연장 종류 10가지<input type="checkbox"</p>
+      <p>속눈썹파마 종류 5가지<input type="checkbox"</p>
+      <p>반영구문신 종류 2가지<input type="checkbox"</p>
+    </div>
+</div>
 </body>
 </html>

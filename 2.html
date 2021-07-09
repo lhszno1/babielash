@@ -4,36 +4,66 @@
   <title>BABIE LASH</title>
   <meta charset="utf-8">
   <style>
-  a{
-    color:yellow;
-    text-decoration: none;
+  body{
+    margin:0px;
   }
+   h1{
+     font-size: 60px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0px;
+     padding-bottom:5px;
+   }
+   a{
+     color:black;
+     text-decoration: none;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width:100px;
+      margin:0px;
+      padding:20px;
+      padding-left:33px;
+
+    }
+    #article{
+      padding: 10px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      #grid ol{
+        border-right:none;
+      }
+        h1{
+      border-bottom:none;
+}
 
   </style>
 </head>
 <body>
   <h1><a href="index.html">바비눈썹</a></h1>
-  <ol>
-    <li><a href="1.html">눈썹종류</a></li>
-    <li><a href="2.html">위치</a></li>
-    <li><a href="3.html" style="color:red;text-decoration:underline">가격</a></li>
-  </ol>
-<!--
-  <h1><a href="index.html">바비눈썹</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">눈썹종류</a></li>
     <li><a href="2.html">위치</a></li>
     <li><a href="3.html">가격</a></li>
   </ol>
--->
-  <h2>위치</h2>
-  인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
-   바비눈썹
-   <a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
-     blank title=위치><img src="지도.png" width="70%"></a>
-  <p style="margin-top:40px;">
-  <p>인천광역시 미추홀구 수봉로43 바비눈썹</p>
-  <p>제물포역 도보 10분</p>
-  <p>마을버스-512번 518번</p>
+  <div id="article">
+      <h2>위치</h2>
+      인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
+       바비눈썹
+      <p>This specification defines the 5th major version, second minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML). In this version, new features continue to be introduced to help Web application authors, new elements continue to be introduced based on research into prevailing authoring practices, and special attention continues to be given to defining clear conformance criteria for user agents in an effort to improve interoperability.</P>
+      <p style="margin-top:40px;">
+      <p>인천광역시 미추홀구 수봉로43 바비눈썹</p>
+      <p>제물포역 도보 10분</p>
+      <p>마을버스-512번 518번</p>
+  </div>
+</div>
 </body>
 </html>

@@ -17,67 +17,100 @@ a{
   color:red;
   text-decoration: none;
 }
+h1{
+  font-size: 60px;
+  text-align: center;
+  border-bottom:2px solid blue;
+  margin:0px;
+  padding: 20px;
+}
+#grid ol{
+  border-right:2px solid blue;
+  width:150px;
+  margin:0px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#article{
+  padding:20px;
+}
+@media(max-width:800px){
+  display:block;{
+  }
+#grid ol{
+  border-right:none;
+}
+h1{
+  border-bottom:none;
+}
+}
 </style>
 </head>
 <body>
-  <h1><a href="index.html">바비눈썹</a></h1>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ySXUKfOmWPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-  <ol>
-    <li><a href="1.html" style="color:blue;text-decoration:underline">눈썹종류</a></li>
-    <li><a href="2.html">위치</a></li>
-    <li><a href="3.html">가격</a></li>
-  </ol>
-  <h2><a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
-    blank title=속눈썹연장>속눈썹연장</a></h2>
-<!--
-  <h1><a href="index.html">바비눈썹</a></h1>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ySXUKfOmWPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-  <ol>
-    <li><a href="1.html">눈썹종류</a></li>
-    <li><a href="2.html">위치</a></li>
-    <li><a href="3.html">가격</a></li>
-  </ol>
-  <h2><a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
-    blank title=속눈썹연장>속눈썹연장</a></h2>
-  -->
-  인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
-   바비눈썹
-  <img src="face.png" width="70%">
-  <p style="margin-top:40px;">
-  <p>경력10년 원장님이 운영하는 가게입니다</p>
-  <p>많은 문의 감사드립니다</p>
-  <p>문의번호 010-0000-0000</p>
-  <p><div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://babie-lash.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+  <h1><a href="index.html"style="color:black;text-decoration:underline">바비눈썹</a></h1>
+<div id=grid>
+    <ol>
+      <li><a href="1.html" style="color:blue;text-decoration:underline">눈썹종류</a></li>
+      <li><a href="2.html">위치</a></li>
+      <li><a href="3.html">가격</a></li>
+    </ol>
+  <div id=article>
+      <h2><a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
+        blank title=속눈썹연장>속눈썹연장</a></h2>
+    <!--
+      <h1><a href="index.html">바비눈썹</a></h1>
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ySXUKfOmWPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <ol>
+        <li><a href="1.html">눈썹종류</a></li>
+        <li><a href="2.html">위치</a></li>
+        <li><a href="3.html">가격</a></li>
+      </ol>
+      <h2><a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
+        blank title=속눈썹연장>속눈썹연장</a></h2>
+      -->
+      인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
+       바비눈썹
+      <img src="face.png" width="70%">
+      <p style="margin-top:40px;">
+      <p>경력10년 원장님이 운영하는 가게입니다</p>
+      <p>많은 문의 감사드립니다</p>
+      <p>문의번호 010-0000-0000</p>
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ySXUKfOmWPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <p><div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://babie-lash.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60e3e540649e0a0a5ccab7f2/1f9t3f1og';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/60e3e540649e0a0a5ccab7f2/1f9t3f1og';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    </script>
+    <!--End of Tawk.to Script-->
+  </div>
+</div>
 </body>
 </html>

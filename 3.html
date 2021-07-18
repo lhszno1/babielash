@@ -4,26 +4,29 @@
   <title>BABIE LASH</title>
   <meta charset="utf-8">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
   <h1><a href="index.html">바비눈썹</a></h1>
-<div id="grid">
+<input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+  ">
   <ol>
     <li><a href="1.html">눈썹종류</a></li>
     <li><a href="2.html">위치</a></li>
     <li><a href="3.html">가격</a></li>
   </ol>
-  <div id="article">
     <h2>가격</h2>
-    인천 미추홀구 <strong><u>눈썹문신</u>잘하는곳</strong>
-     바비눈썹
-     <a href="https://m.place.naver.com/place/38563457/home?entry=ple"target=
-       blank title=가격><img src="cost.png" width="70%"></a>
-    <p style="margin-top:40px;">
     <p>속눈썹연장 종류 10가지 3만원부터 10만원까지</p>
     <p>속눈썹파마 종류 5가지 3만원부터 5만원까지</p>
     <p>반영구문신 종류 2가지 15만원부터 20만원까지</p>
-  </div>
-</div>
+
 </body>
 </html>
